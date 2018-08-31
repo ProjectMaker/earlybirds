@@ -5,12 +5,21 @@
 
 // Dependencies
 const cli = require('./lib/cli')
+const localStorage = require('./lib/local-storage')
 
 // Declare the app
 const app = {}
 
-// Init function
+/**
+ * Init app
+ *
+ * @param {function} cb
+ */
 app.init = (cb) => {
+    // Init the local storage
+    localStorage.init(['products'])
+
+    // Start the CLI, but make sure it start last
     setTimeout(() => {
         cli.init()
         cb()
