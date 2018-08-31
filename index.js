@@ -5,6 +5,7 @@
 
 // Dependencies
 const cli = require('./lib/cli')
+const helpers = require('./lib/helpers')
 
 // Declare the app
 const app = {}
