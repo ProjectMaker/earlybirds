@@ -6,6 +6,7 @@
 // Dependencies
 const cli = require('./lib/cli')
 const localStorage = require('./lib/local-storage')
+const server = require('./lib/server')
 
 // Declare the app
 const app = {}
@@ -16,6 +17,9 @@ const app = {}
  * @param {function} cb
  */
 app.init = (cb) => {
+    // Init the server
+    server.init()
+
     // Init the local storage
     localStorage.init(['products'])
 
