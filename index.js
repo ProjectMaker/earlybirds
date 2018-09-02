@@ -6,7 +6,7 @@
 // Dependencies
 const cli = require('./lib/cli')
 const localStorage = require('./lib/local-storage')
-const server = require('./lib/server')
+const server = require('./lib/server/server')
 
 // Declare the app
 const app = {}
