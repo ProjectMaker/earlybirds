@@ -4,7 +4,7 @@
   "description": "Reco produits de couleur similaire",
   "main": "index.js",
   "scripts": {
-    "start": "VISION_API_KEY=AIzaSyBCX0YUeuWx2sW2kXroidPSXydE1CJkeyk node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thomas Michelet",
