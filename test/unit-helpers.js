@@ -33,5 +33,10 @@ unit['helpers.parseJsonToObject should return an object with key name'] = (done)
     done()
 }
 
+// Assert that the convertRgbToHew function is returning #000000
+unit['helpers.convertRgbToHex should return #000000'] = (done) => {
+    assert.equal(helpers.convertRgbToHex(0,0,0), '#000000')
+    done()
+}
 // Export the tests to the runner
 module.exports = unit
